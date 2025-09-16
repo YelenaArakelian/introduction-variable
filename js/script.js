@@ -12,16 +12,19 @@
  * create canvas
  */
 function setup() {
-  createCanvas(640, 640);
+  createCanvas(640, 480);
 }
 
 /**
  * draw a circle in the center of the canvas
  */
 function draw() {
+  background(0);
+
+  //draw the circle
   push();
-  noStroke();
   fill(255, 255, 0);
-  ellipse(320, 320, 100, 100);
+  noStroke();
+  ellipse(mouseY, mouseX, 100, 100);
   pop();
 }
